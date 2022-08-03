@@ -1,3 +1,55 @@
 /* Neutral */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.header {
+  background-color: hsl(208deg, 11%, 55%);
+  font-family: "Poppins", sans-serif;
+}
+.header .header-title {
+  text-align: center;
+}
+.header .header-title h1 {
+  font-size: 25px;
+}
+.header .header-title h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-pink {
+  font-size: 18px;
+  padding: 20px 50px;
+  background-color: hsl(322deg, 100%, 66%);
+  color: white;
+  border: none;
+  border-radius: 35px;
+}
+
+.btn-pink2 {
+  font-size: 12px;
+  padding: 20px 50px;
+  background-color: hsl(322deg, 100%, 66%);
+  color: white;
+  border: none;
+  border-radius: 35px;
+}
+
+.container {
+  box-shadow: 5px 3px 2px gray;
+}
+
+.footer {
+  background-color: hsl(192deg, 100%, 9%);
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,5 +4,19 @@
   },
   "scripts": {
     "sass": "sass -w styles.scss styles/styles.css"
-  }
+  },
+  "name": "kata-01-diseno-web-k1-ca-reilero-11",
+  "description": "![BrightCoders Logo](images/logo-bc.png)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-ca-reilero-11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-ca-reilero-11/issues"
+  },
+  "homepage": "https://github.com/BC-MAY-21-ROR/kata-01-diseno-web-k1-ca-reilero-11#readme"
 }

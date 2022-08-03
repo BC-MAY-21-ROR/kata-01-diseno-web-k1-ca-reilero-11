@@ -1,7 +1,63 @@
 $font-Sans: 'Open Sans', sans-serif;
 $font-Poppins: 'Poppins', sans-serif; 
+$font-size: 18px;
 $pink : hsl(322, 100%, 66%);
 /* Neutral */
 $verypalecyan : hsl(193, 100%, 96%);
 $verydarkcyan : hsl(192, 100%, 9%);
 $grayishblue : hsl(208, 11%, 55%);
+
+@mixin pinkbutton($fontsize) {
+    font-size: $fontsize;
+    padding: 20px 50px;
+    background-color: $pink;
+    color: white;
+    border: none;
+    border-radius: 35px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.header {
+    background-color: $grayishblue;
+    font-family: $font-Poppins;
+
+    .header-title {
+        text-align: center;
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-family: $font-Sans;
+            font-size: $font-size;
+            font-weight: 400;
+        }
+    }
+}
+
+.btn-pink {
+    @include pinkbutton($font-size);
+}
+
+.btn-pink2 {
+    @include pinkbutton(12px);
+}
+
+.container {
+    box-shadow: 5px 3px 2px gray;
+}
+
+.footer {
+    background-color: $verydarkcyan;
+}
