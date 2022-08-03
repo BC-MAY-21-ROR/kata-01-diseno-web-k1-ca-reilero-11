@@ -1,0 +1,15 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+    /* Primary */
+    --pink : hsl(322, 100%, 66%);
+    /* Neutral */
+    --verypalecyan : hsl(193, 100%, 96%);
+    --verydarkcyan : hsl(192, 100%, 9%);
+    --grayishblue : hsl(208, 11%, 55%);
+}
+
+img {
+    width: 10px;
+}
