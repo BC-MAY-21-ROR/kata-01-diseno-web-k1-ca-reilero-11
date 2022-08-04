@@ -1,24 +1,37 @@
-$font-Sans: "Open Sans", sans-serif;
-$font-Poppins: "Poppins", sans-serif;
-$font-size: 18px;
+// ******************** Variables ******************** //
+// ********** Primary Color ************ //
 $pink: hsl(322, 100%, 66%);
-/* Neutral */
-$verypalecyan: hsl(193, 100%, 96%);
-$verydarkcyan: hsl(192, 100%, 9%);
+
+// ********** Secondary Colors ************ //
 $grayishblue: hsl(208, 11%, 55%);
+$verydarkcyan: hsl(192, 100%, 9%);
+$verypalecyan: hsl(193, 100%, 96%);
+
+// ********** Fonts ************ //
+
+$font-Poppins: "Poppins", sans-serif;
+$font-Sans: "Open Sans", sans-serif;
+$font-size: 18px;
+
+// ********** Others ************ //
+
 $shadow: 0 0 14px 1px $grayishblue;
 
+// ******************** Mixins ******************** //
+
 @mixin pinkbutton($fontsize) {
-  font-size: $fontsize;
-  padding: 20px 50px;
   background-color: $pink;
-  color: white;
   border: none;
   border-radius: 35px;
+  color: white;
+  font-size: $fontsize;
+  padding: 20px 50px;
 }
 
+// ******************** Globals ******************** //
+
 * {
-  margin: 0 5px;
+  margin: 0;
   padding: 0;
 }
 
@@ -27,14 +40,34 @@ p {
 }
 
 .grid-container {
-  display: grid;
   column-gap: 20px;
+  display: grid;
   row-gap: 30px;
 }
+
+// ******************** Header ******************** //
 
 .header {
   background-color: $grayishblue;
   font-family: $font-Poppins;
+
+  .header-navbar {
+    margin-top: 30px;
+
+    .btn-try {
+      background-color: $verypalecyan;
+      border: none;
+      border-radius: 20px;
+      color: $verydarkcyan;
+      font-family: $font-Poppins;
+      font-size: 12px;
+      padding: 2px 15px;
+    }
+    
+    .logo-header {
+      width: 110px;
+    }
+  }
 
   .header-title {
     text-align: center;
@@ -53,16 +86,20 @@ p {
   }
 }
 
+// ******************** Sections ******************** //
+
 .container {
   border-radius: 10px;
   box-shadow: $shadow;
   .text {
     text-align: center;
+
     h1 {
       color: $verydarkcyan;
       font-family: $font-Poppins;
       font-size: 20px;
     }
+
     h3 {
       font-family: $font-Sans;
       font-size: $font-size;
@@ -73,9 +110,10 @@ p {
 }
 
 .pop-up {
+  border-radius: 10px;
   box-shadow: $shadow;
   text-align: center;
-  border-radius: 10px;
+
   .text {
     color: $verydarkcyan;
     font-family: $font-Poppins;
@@ -91,6 +129,8 @@ p {
   @include pinkbutton(12px);
 }
 
+// ******************** Footer ******************** //
+
 .footer {
   background-color: $verydarkcyan;
   font-family: $font-Sans;
@@ -99,6 +139,7 @@ p {
     display: inline-block;
     font-size: $font-size - 2px;
     font-weight: 200;
+    
     span {
       color: white;
     }
@@ -113,9 +154,9 @@ p {
   }
 
   .copyright {
-    text-align: center;
     font-size: 10px;
     margin: 30px 0;
+    text-align: center;
   }
 
   img, i {
