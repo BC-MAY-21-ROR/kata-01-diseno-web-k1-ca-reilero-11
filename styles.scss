@@ -15,7 +15,7 @@ $font-size: 18px;
 
 // ********** Others ************ //
 
-$shadow: 0 0 14px 1px $grayishblue;
+$shadow: 0 0 8px 1px $grayishblue;
 
 // ******************** Mixins ******************** //
 
@@ -166,6 +166,10 @@ p {
   background-color: $verydarkcyan;
   font-family: $font-Sans;
 
+  .footer-content {
+    margin: 0 18px 0 18px;
+  }
+
   .footer-img {
     margin-top: 110px;
   }
@@ -185,6 +189,7 @@ p {
   .links {
     font-weight: 400;
     margin-bottom: 30px;
+    margin-top: 50px;
     p {
       margin-top: 15px;
     }

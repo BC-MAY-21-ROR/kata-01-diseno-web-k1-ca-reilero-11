@@ -32,7 +32,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   padding: 2px 15px;
-  box-shadow: 0 0 14px 1px hsl(208deg, 11%, 55%);
+  box-shadow: 0 0 8px 1px hsl(208deg, 11%, 55%);
 }
 .header .header-navbar .logo-header {
   width: 110px;
@@ -62,7 +62,7 @@ p {
 
 .container {
   border-radius: 10px;
-  box-shadow: 0 0 14px 1px hsl(208deg, 11%, 55%);
+  box-shadow: 0 0 8px 1px hsl(208deg, 11%, 55%);
   margin: 7px 20px;
 }
 .container .text {
@@ -92,7 +92,7 @@ p {
 
 .pop-up {
   border-radius: 10px;
-  box-shadow: 0 0 14px 1px hsl(208deg, 11%, 55%);
+  box-shadow: 0 0 8px 1px hsl(208deg, 11%, 55%);
   text-align: center;
   position: relative;
   margin: auto 20px;
@@ -133,6 +133,9 @@ p {
   background-color: hsl(192deg, 100%, 9%);
   font-family: "Open Sans", sans-serif;
 }
+.footer .footer-content {
+  margin: 0 18px 0 18px;
+}
 .footer .footer-img {
   margin-top: 110px;
 }
@@ -149,6 +152,7 @@ p {
 .footer .links {
   font-weight: 400;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 .footer .links p {
   margin-top: 15px;
