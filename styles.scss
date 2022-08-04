@@ -49,9 +49,8 @@ p {
 
 // ******************** Header ******************** //
 .header {
-  
   font-family: $font-Poppins;
-  background-image:url("../images/bg-hero-mobile.svg") ;
+  background-image: url("../images/bg-hero-mobile.svg");
   background-repeat: no-repeat;
   background-size: auto;
   .header-navbar {
@@ -60,7 +59,7 @@ p {
     margin: 30px 10px;
 
     .btn-try {
-      background-color:white;
+      background-color: white;
       border: none;
       border-radius: 20px;
       color: $verydarkcyan;
@@ -69,15 +68,15 @@ p {
       padding: 2px 15px;
       box-shadow: $shadow;
     }
-    
+
     .logo-header {
       width: 110px;
     }
   }
-  .mockup{
+  .mockup {
     margin: 50px 0px;
     text-align: center;
-    img{
+    img {
       width: 80%;
     }
   }
@@ -94,7 +93,7 @@ p {
       font-family: $font-Sans;
       font-size: $font-size;
       font-weight: 400;
-      margin:20px 15px;
+      margin: 20px 15px;
     }
   }
 }
@@ -178,7 +177,7 @@ p {
     display: flex;
     font-size: $font-size - 2px;
     font-weight: 200;
-    
+
     span {
       color: white;
       padding-left: 20px;
@@ -200,20 +199,57 @@ p {
     margin: 30px 0;
     text-align: center;
   }
-  .social{
+  .social {
     text-align: center;
-    i{
+    i {
       border-style: solid;
       border-radius: 50%;
       border-width: 1px;
       padding: 5px 5px;
       margin: 5px;
     }
-    #facebook-logo{
+    #facebook-logo {
       width: 15px;
     }
   }
-  img, i {
-    filter:  brightness(0) invert(1);
+  img,
+  i {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    .header-navbar {
+      grid-column: 1 / -1;
+    }
+    .header-title {
+      grid-column: 1;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .text {
+      text-align: left;
+      h1 {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .grid-container .container:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .pop-up {
+    margin: 0 auto;
+    width: 50%;
   }
 }
