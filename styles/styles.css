@@ -14,23 +14,35 @@ p {
 }
 
 .header {
-  background-color: hsl(208deg, 11%, 55%);
   font-family: "Poppins", sans-serif;
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 .header .header-navbar {
-  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 10px;
 }
 .header .header-navbar .btn-try {
-  background-color: hsl(193deg, 100%, 96%);
+  background-color: white;
   border: none;
   border-radius: 20px;
   color: hsl(192deg, 100%, 9%);
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   padding: 2px 15px;
+  box-shadow: 0 0 14px 1px hsl(208deg, 11%, 55%);
 }
 .header .header-navbar .logo-header {
   width: 110px;
+}
+.header .mockup {
+  margin: 50px 0px;
+  text-align: center;
+}
+.header .mockup img {
+  width: 80%;
 }
 .header .header-title {
   text-align: center;
@@ -38,73 +50,101 @@ p {
 .header .header-title h1 {
   color: hsl(192deg, 100%, 9%);
   font-size: 25px;
+  margin: 20px;
 }
 .header .header-title h3 {
   color: hsl(192deg, 100%, 9%);
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  margin: 20px 15px;
 }
 
 .container {
   border-radius: 10px;
   box-shadow: 0 0 14px 1px hsl(208deg, 11%, 55%);
+  margin: 7px 20px;
 }
 .container .text {
   text-align: center;
+  margin: 15px 26px;
 }
 .container .text h1 {
   color: hsl(192deg, 100%, 9%);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+  margin: 15px;
 }
 .container .text h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: hsl(208deg, 11%, 55%);
+  margin-bottom: 40px;
+}
+.container .Image {
+  text-align: center;
+  margin: 35px auto;
+}
+.container .Image img {
+  width: 60%;
 }
 
 .pop-up {
   border-radius: 10px;
   box-shadow: 0 0 14px 1px hsl(208deg, 11%, 55%);
   text-align: center;
+  position: relative;
+  margin: auto 20px;
+  top: 90px;
+  background-color: white;
 }
 .pop-up .text {
   color: hsl(192deg, 100%, 9%);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  margin-top: 45px;
 }
 
 .btn-pink {
+  font-family: "Open Sans", sans-serif;
   background-color: hsl(322deg, 100%, 66%);
   border: none;
   border-radius: 35px;
   color: white;
-  font-size: 18px;
-  padding: 20px 50px;
+  font-size: 16px;
+  padding: 15px 50px;
+  font-weight: 600;
 }
 
 .btn-pink2 {
+  font-family: "Open Sans", sans-serif;
   background-color: hsl(322deg, 100%, 66%);
   border: none;
   border-radius: 35px;
   color: white;
   font-size: 12px;
-  padding: 20px 50px;
+  padding: 15px 50px;
+  font-weight: 600;
+  margin: 30px auto;
 }
 
 .footer {
   background-color: hsl(192deg, 100%, 9%);
   font-family: "Open Sans", sans-serif;
 }
+.footer .footer-img {
+  margin-top: 110px;
+}
 .footer .info-details {
-  display: inline-block;
+  display: flex;
   font-size: 16px;
   font-weight: 200;
+  padding-top: 30px;
 }
 .footer .info-details span {
   color: white;
+  padding-left: 20px;
 }
 .footer .links {
   font-weight: 400;
@@ -117,6 +157,19 @@ p {
   font-size: 10px;
   margin: 30px 0;
   text-align: center;
+}
+.footer .social {
+  text-align: center;
+}
+.footer .social i {
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 1px;
+  padding: 5px 5px;
+  margin: 5px;
+}
+.footer .social #facebook-logo {
+  width: 15px;
 }
 .footer img, .footer i {
   filter: brightness(0) invert(1);

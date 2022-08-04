@@ -104,20 +104,32 @@ p {
 .container {
   border-radius: 10px;
   box-shadow: $shadow;
+  margin: 7px 20px;
   .text {
     text-align: center;
+    margin: 15px 26px;
 
     h1 {
       color: $verydarkcyan;
       font-family: $font-Poppins;
       font-size: 20px;
+      margin: 15px;
     }
 
     h3 {
       font-family: $font-Sans;
-      font-size: $font-size;
+      font-size: $font-size - 2px;
       font-weight: 400;
       color: $grayishblue;
+      margin-bottom: 40px;
+    }
+  }
+
+  .Image {
+    text-align: center;
+    margin: 35px auto;
+    img {
+      width: 60%;
     }
   }
 }
@@ -126,11 +138,16 @@ p {
   border-radius: 10px;
   box-shadow: $shadow;
   text-align: center;
+  position: relative;
+  margin: auto 20px;
+  top: 90px;
+  background-color: white;
 
   .text {
     color: $verydarkcyan;
     font-family: $font-Poppins;
     font-size: 18px;
+    margin-top: 45px;
   }
 }
 
@@ -140,6 +157,7 @@ p {
 
 .btn-pink2 {
   @include pinkbutton(12px);
+  margin: 30px auto;
 }
 
 // ******************** Footer ******************** //
@@ -147,6 +165,10 @@ p {
 .footer {
   background-color: $verydarkcyan;
   font-family: $font-Sans;
+
+  .footer-img {
+    margin-top: 110px;
+  }
 
   .info-details {
     display: flex;
