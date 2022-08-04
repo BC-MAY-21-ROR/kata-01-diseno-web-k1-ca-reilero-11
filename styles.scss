@@ -200,6 +200,8 @@ p {
     text-align: center;
   }
   .social {
+    justify-content: center;
+    display: flex;
     text-align: center;
     i {
       border-style: solid;
@@ -251,5 +253,28 @@ p {
   .pop-up {
     margin: 0 auto;
     width: 50%;
+  }
+  .footer-img{
+    margin-left: 10%;
+  }
+  .footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    .info{
+      width: 30%;
+    }
+  }
+  .social{
+    display: flex;
+  }
+  .links{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+  }
+  .footer .copyright{
+    text-align: end;
+    margin-right: 5%;
   }
 }
