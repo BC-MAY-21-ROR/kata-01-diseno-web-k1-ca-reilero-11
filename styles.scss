@@ -156,7 +156,7 @@ p {
 .pop-up {
   background-color: white;
   border-radius: 10px;
-  box-shadow: $shadow;
+  box-shadow: 0 0 8px 0.1px black;
   margin: auto 20px;
   position: relative;
   text-align: center;
@@ -273,15 +273,24 @@ p {
       }
 
       .btn-try {
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 700;
+        height: 50px;
         margin-right: 30px;
         width: 200px;
-        font-size: 14px;
-        height: 50px;
       }
     }
 
     .header-title {
       grid-column: 1;
+      margin-left: 80px;
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .mockup {
+      margin-right: 80px;
     }
   }
 
@@ -289,10 +298,12 @@ p {
     align-items: center;
     display: flex;
     flex-direction: row;
+    margin: 0 100px;
     justify-content: center;
 
     .text {
       text-align: left;
+      margin-left: 125px;
 
       h1 {
         margin-left: 0;
@@ -337,3 +348,13 @@ p {
     text-align: end;
   }
 }
+
+@media (max-width: 1099px) {
+  .footer-img {
+    margin-left: 15px;
+  }
+
+  .header-title {
+    margin-top: 100px;
+  }
+} 
