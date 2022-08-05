@@ -286,7 +286,15 @@ p {
       grid-column: 1;
       margin-left: 80px;
       margin-top: 80px;
-      text-align: center;
+      text-align: left;
+
+      h1 {
+        margin-left: 0;
+      }
+
+      h3 {
+        margin-left: 0;
+      }
     }
 
     .mockup {
