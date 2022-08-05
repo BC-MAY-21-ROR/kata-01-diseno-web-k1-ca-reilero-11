@@ -20,14 +20,15 @@ $shadow: 0 0 8px 1px $grayishblue;
 // ******************** Mixins ******************** //
 
 @mixin pinkbutton($fontsize) {
-  font-family: $font-Sans;
   background-color: $pink;
   border: none;
   border-radius: 35px;
   color: white;
+  cursor: pointer;
+  font-family: $font-Sans;
   font-size: $fontsize;
-  padding: 15px 50px;
   font-weight: 600;
+  padding: 15px 50px;
 }
 
 // ******************** Globals ******************** //
@@ -49,11 +50,13 @@ p {
 
 // ******************** Header ******************** //
 .header {
-  font-family: $font-Poppins;
   background-image: url("../images/bg-hero-mobile.svg");
   background-repeat: no-repeat;
   background-size: auto;
+  font-family: $font-Poppins;
+
   .header-navbar {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 30px 10px;
@@ -62,17 +65,23 @@ p {
       background-color: white;
       border: none;
       border-radius: 20px;
+      box-shadow: $shadow;
       color: $verydarkcyan;
+      cursor: pointer;
       font-family: $font-Poppins;
       font-size: 12px;
       padding: 2px 15px;
-      box-shadow: $shadow;
+    }
+
+    .btn-try:hover {
+      color: #8d949a;
     }
 
     .logo-header {
       width: 110px;
     }
   }
+
   .mockup {
     margin: 50px 0px;
     text-align: center;
@@ -80,8 +89,10 @@ p {
       width: 80%;
     }
   }
+
   .header-title {
     text-align: center;
+
     h1 {
       color: $verydarkcyan;
       font-size: 25px;
@@ -98,12 +109,21 @@ p {
   }
 }
 
+.btn-pink {
+  @include pinkbutton($font-size - 2px);
+}
+
+.btn-pink:hover {
+  background-color: #ff9bdb;
+}
+
 // ******************** Sections ******************** //
 
 .container {
   border-radius: 10px;
   box-shadow: $shadow;
   margin: 7px 20px;
+
   .text {
     text-align: center;
     margin: 15px 26px;
@@ -116,17 +136,17 @@ p {
     }
 
     h3 {
+      color: $grayishblue;
       font-family: $font-Sans;
       font-size: $font-size - 2px;
       font-weight: 400;
-      color: $grayishblue;
       margin-bottom: 40px;
     }
   }
 
   .Image {
-    text-align: center;
     margin: 35px auto;
+    text-align: center;
     img {
       width: 60%;
     }
@@ -134,13 +154,13 @@ p {
 }
 
 .pop-up {
+  background-color: white;
   border-radius: 10px;
   box-shadow: $shadow;
-  text-align: center;
-  position: relative;
   margin: auto 20px;
+  position: relative;
+  text-align: center;
   top: 90px;
-  background-color: white;
 
   .text {
     color: $verydarkcyan;
@@ -150,13 +170,13 @@ p {
   }
 }
 
-.btn-pink {
-  @include pinkbutton($font-size - 2px);
-}
-
 .btn-pink2 {
   @include pinkbutton(12px);
   margin: 30px auto;
+}
+
+.btn-pink2:hover {
+  background-color: #ff9bdb;
 }
 
 // ******************** Footer ******************** //
@@ -177,21 +197,27 @@ p {
     display: flex;
     font-size: $font-size - 2px;
     font-weight: 200;
+    padding-top: 30px;
 
     span {
       color: white;
       padding-left: 20px;
     }
-    padding-top: 30px;
   }
 
   .links {
     font-weight: 400;
     margin-bottom: 30px;
     margin-top: 50px;
+
     p {
       margin-top: 15px;
     }
+  }
+
+  .links div p:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 
   .copyright {
@@ -199,47 +225,75 @@ p {
     margin: 30px 0;
     text-align: center;
   }
+
   .social {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     text-align: center;
+
     i {
       border-style: solid;
       border-radius: 50%;
       border-width: 1px;
-      padding: 5px 5px;
       margin: 5px;
+      padding: 5px 5px;
     }
+
     #facebook-logo {
       width: 15px;
     }
   }
-  img,
-  i {
+
+  img, i {
+    cursor: pointer;
     filter: brightness(0) invert(1);
+  }
+
+  .social div i:hover {
+    filter: invert(61%) sepia(43%) saturate(7498%) hue-rotate(295deg) brightness(103%) contrast(101%);
   }
 }
 
+// ******************** Media Query ******************** //
+
 @media only screen and (min-width: 1100px) {
   .header {
+    background-image: url("../images/bg-hero-desktop.svg");
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+
     .header-navbar {
       grid-column: 1 / -1;
+
+      .logo-header {
+        margin-left: 30px;
+        height: 30px;
+        width: 200px;
+      }
+
+      .btn-try {
+        margin-right: 30px;
+        width: 200px;
+        font-size: 14px;
+        height: 50px;
+      }
     }
+
     .header-title {
       grid-column: 1;
     }
   }
 
   .container {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+
     .text {
       text-align: left;
+
       h1 {
         margin-left: 0;
       }
@@ -254,27 +308,32 @@ p {
     margin: 0 auto;
     width: 50%;
   }
+
   .footer-img{
     margin-left: 10%;
   }
+
   .footer-content{
+    align-items: baseline;
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
     .info{
       width: 30%;
     }
   }
+
   .social{
     display: flex;
   }
+
   .links{
     display: flex;
     justify-content: space-between;
     width: 15%;
   }
+
   .footer .copyright{
-    text-align: end;
     margin-right: 5%;
+    text-align: end;
   }
 }
